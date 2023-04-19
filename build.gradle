@@ -13,7 +13,7 @@ def loaderVersion = '0.14.8'
 def fabricApiVersion = '0.57.0+1.19'
 
 group = 'me.lucko'
-version = '0.2-SNAPSHOT'
+version = '0.3-SNAPSHOT'
 
 dependencies {
     minecraft "com.mojang:minecraft:${minecraftVersion}"
@@ -47,15 +47,6 @@ task sourcesJar(type: Jar, dependsOn: classes) {
 
 // configure the maven publication
 publishing {
-    //repositories {
-    //    maven {
-    //        url = 'https://oss.sonatype.org/content/repositories/snapshots'
-    //        credentials {
-    //            username = sonatypeUsername
-    //            password = sonatypePassword
-    //        }
-    //    }
-    //}
     publications {
         mavenJava(MavenPublication) {
             // add all the jars that should be included when publishing to maven
